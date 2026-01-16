@@ -1,16 +1,18 @@
-fastapi==0.110.0
-uvicorn==0.29.0
+# Web
+fastapi
+uvicorn[standard]
+python-multipart
 
-SQLAlchemy==2.0.29
-pydantic==2.6.4
+# Core numeric / vision
+numpy
+opencv-python-headless
 
-requests==2.31.0
+# OCR
+paddleocr
+paddlepaddle
 
-python-multipart==0.0.9
+# Database (Postgres, psycopg v3)
+psycopg[binary]
 
-openai>=1.0.0
-
-openpyxl
-
-
-
+# Optional but safe (often pulled transitively, we pin it)
+protobuf<5
